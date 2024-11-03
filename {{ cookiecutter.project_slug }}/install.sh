@@ -14,4 +14,3 @@ mv wp-config.php ./webroot/
 # Make the startdev.sh script executable
 echo "Enter password to make ./startdev.sh executable..."
 sudo chmod +x ./startdev.sh
-
