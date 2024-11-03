@@ -40,7 +40,6 @@ services:
       environment:
         MYSQL_ROOT_PASSOWRD: wordpress
         UPLOAD_LIMIT: 300M
-        PMA_HOST: localhost
         PMA_HOST: mysql
         PMA_USER: admin
         PMA_PASSWORD: admin

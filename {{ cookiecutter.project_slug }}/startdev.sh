@@ -29,7 +29,7 @@ fi
 
 # Open localhost:80 in the default web browser
 echo "Opening phpymadmin.."	
-xdg-open http://localhost:8001
+{% if cookiecutter.os_choice == 'mac' %}open{% else %}xdg-open{% endif %} http://localhost:8001
 
 echo "Opening localhost:80 in the default web browser..."
-xdg-open http://localhost:80
+{% if cookiecutter.os_choice == 'mac' %}open{% else %}xdg-open{% endif %} http://localhost:80
