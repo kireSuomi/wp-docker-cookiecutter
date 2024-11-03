@@ -24,7 +24,7 @@ echo "Starting containers..."
 if [ -e "docker-compose.yaml" ]; then
     echo "Info: Using overrides from docker-compose.yaml."
     docker compose up --build -d
-    (docker compose logs -f) &
+    #(docker compose logs -f) &
 fi
 
 # Open localhost:80 in the default web browser
@@ -33,3 +33,11 @@ echo "Opening phpymadmin.."
 
 echo "Opening localhost:80 in the default web browser..."
 {% if cookiecutter.os_choice == 'mac' %}open{% else %}xdg-open{% endif %} http://localhost:80
+
+# yes or no, show docker logs
+echo ""
+read -p "Want to see the logs? [n (y for yes)]:" showlogs
+
+if [ "$showlogs" = "y" ] || [ "$showlogs" = "Y" ]; then
+	docker compose logs -f
+fi
