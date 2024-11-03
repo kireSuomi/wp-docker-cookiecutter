@@ -11,6 +11,4 @@ composer install
 # Move wp-config.php into /webroot
 mv wp-config.php ./webroot/
 
-# Make the startdev.sh script executable
-echo "Enter password to make ./startdev.sh executable..."
-sudo chmod +x ./startdev.sh
+echo "Run ./startdev.sh to start the development environment."
