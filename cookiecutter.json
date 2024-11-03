@@ -2,6 +2,6 @@
   "project_name": "Cookiecutter Website Simple",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "os_choice": ["mac", "linux"],
-  "php_version": "[7.4, 8.1]",
+  "php_version": ["7.4", "8.1"],
   "author": "Anonymous"
 }
