@@ -24,7 +24,7 @@ echo "Starting containers..."
 if [ -e "docker-compose.yaml" ]; then
     echo "Info: Using overrides from docker-compose.yaml."
     docker compose up --build -d
-    docker compose logs -f
+    (docker compose logs -f) &
 fi
 
 # Open localhost:80 in the default web browser
