@@ -28,4 +28,8 @@ if [ -e "docker-compose.yaml" ]; then
 fi
 
 # Open localhost:80 in the default web browser
+echo "Opening phpymadmin.."	
+xdg-open http://localhost:8001
+
+echo "Opening localhost:80 in the default web browser..."
 xdg-open http://localhost:80
