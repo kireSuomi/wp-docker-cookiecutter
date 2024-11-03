@@ -17,7 +17,18 @@ if [ "$RUNNING_CONTAINERS" != "" ]; then
 fi
 
 
-echo ""
+echo "Waiting for containers to start.."
+sleep 1
+echo "Waiting for containers to start."
+sleep 1
+echo "Waiting for containers to start.."
+sleep 1
+echo "Waiting for containers to start."
+sleep 1
+echo "Waiting for containers to start.."
+sleep 1
+echo "Waiting for containers to start."
+
 echo "Starting containers..."
 
 
