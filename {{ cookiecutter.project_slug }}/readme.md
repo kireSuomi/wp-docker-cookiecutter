@@ -1,17 +1,11 @@
 # Installation
 
-1. `sudo chmod +x ./install.sh`
+Make sure you have cookiecutter installed, if not
+run `brew install cookiecutter`
+
+1. `sudo chmod +x ./install.sh && sudo chmod +x ./startdev.sh`
 2. `./install.sh`
 
 ## Start development env
 
 1. `./startdev.sh`
-
-### Login for database
-
-- **Database Name:** wordpress
-- **Username:** root
-- **Password:** admin
-  <br>
-- **Host:** localhost
-- **Host mac:** host.docker.internal
