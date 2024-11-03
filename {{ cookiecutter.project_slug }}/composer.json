@@ -1,0 +1,36 @@
+{
+  "type": "project",
+  "require": {
+    "johnpbloch/wordpress": "6.2",
+    "wpackagist-plugin/woocommerce": "8.0",
+    "wpackagist-plugin/woo-order-test": "3.4"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "scripts": {
+    "post-root-package-install": [
+      "mkdir -p webroot/wp-content/uploads"
+    ],
+    "post-create-project-cmd": [
+      "chmod -R 775 webroot/wp-content/uploads"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "johnpbloch/wordpress-core-installer": true,
+      "composer/installers": true
+    }
+  },
+  "extra": {
+    "installer-paths": {
+      "webroot/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ]
+    },
+    "wordpress-install-dir": "webroot"
+  }
+}
